@@ -1,8 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '_variable';
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-body{
-    color: $color;
-}
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+// Import your custom input theme file so you can call the custom-input-theme function
+@import '_mat-mixin';
+
+// Using the $theme variable from the pre-built theme you can call the theming function
+//@include app-mat-theme-var($theme);
+
+@import '_variable';
+
+@import '_nav';

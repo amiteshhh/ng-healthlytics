@@ -1,0 +1,6 @@
+@import '~@angular/material/theming';
+// Define a theme. https://github.com/angular/material2/blob/master/src/lib/core/theming/prebuilt/indigo-pink.scss
+$app-primary: mat-palette($mat-indigo);
+$app-accent : mat-palette($mat-pink, A200, A100, A400);
+$theme: mat-light-theme($app-primary, $app-accent);
+$primary: mat-color($app-primary);
