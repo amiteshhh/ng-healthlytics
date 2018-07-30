@@ -1,4 +1,4 @@
-import { BrowserModule, Title } from '@angular/platform-browser';
+import { BrowserModule/* , Title */ } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -23,7 +23,7 @@ import { HomeComponent } from './home/home.component';
     AppMaterialModule,
     AppRoutingModule
   ],
-  providers: [Title],
+  //providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

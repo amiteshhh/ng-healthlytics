@@ -1,3 +1,12 @@
-<p>
-  setup works!
-</p>
+<mat-nav-list>
+  <h3 mat-subheader>Lookups</h3>
+  <a mat-list-item routerLink="setup/{{lookupCategory.name}}" *ngFor="let lookupCategory of lookupCategories">
+    <mat-icon mat-list-icon>{{lookupCategory.icon}}</mat-icon>
+    <h3 mat-line>{{lookupCategory.name}}</h3>
+    <p matLine class="demo-2"> {{lookupCategory.description}} </p>
+    <mat-divider></mat-divider>
+</a>
+  
+  <h3 mat-subheader>Notes</h3>
+  
+</mat-nav-list>

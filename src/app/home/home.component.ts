@@ -8,6 +8,18 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class HomeComponent implements OnInit {
   @Output()
   authorClick: EventEmitter<String> = new EventEmitter<String>(); //creating an output event
+
+  messages = [{
+    avatar: 'http://via.placeholder.com/150x100',
+    from:'Amitesh',
+    subject: 'Check it',
+    content: 'Hey Johna! I hope you are doing well'
+  },{
+    avatar: 'http://via.placeholder.com/150x100',
+    from:'Amitesh',
+    subject: 'Check it',
+    content: 'Hey Johna! I hope you are doing well'
+  }]
   constructor() { }
 
   ngOnInit() {
