@@ -14,6 +14,7 @@
 <mat-card class="nav-footer">
   <nav mat-tab-nav-bar>
     <a mat-tab-link *ngFor="let menu of mainMenus" routerLink="{{menu.path}}" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+    <!-- <a mat-tab-link *ngFor="let menu of mainMenus" routerLink="{{menu.path}}" routerLinkActive="active"> -->
       <mat-icon class="tab-icon">{{menu.data.icon}}</mat-icon>
       {{menu.data.menuName || menu.data.title}}
     </a>

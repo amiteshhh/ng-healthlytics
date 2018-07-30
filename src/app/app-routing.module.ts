@@ -15,18 +15,19 @@ import { Observable, Subject, asapScheduler, pipe, of, from,
 import { HomeComponent } from './home/home.component'
 import { AnalyticsComponent } from './analytics/analytics.component'
 import { SetupComponent } from './setup/setup.component'
+import { LookupComponent } from './setup/lookup/lookup.component'
 
 
 // interface routeData{
 //   title: string, mainMenu?: boolean, menuName?:string, icon?:string
 // }
 export const routeList: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/setup', pathMatch: 'full' },
   // do you know how to make intellisense work for interface routeData. i.e routeList[1].data.{should populate routeData prop here}
   // { path: 'home', component: HomeComponent, data: <routeData>{title: 'Home', mainMenu: true, menuName:'Sweet Home', icon:'home'} },
   { path: 'home', component: HomeComponent, data: {title: 'Home', mainMenu: true, menuName:'Sweet Home', icon:'home'} },
   { path: 'analytics', component: AnalyticsComponent, data: {title: 'Analytics', mainMenu: true, icon: 'trending_up'} },
-  { path: 'setup/:id', component: SetupComponent, data: {title: 'Setups'} },
+  { path: 'setup/:id', component: LookupComponent, data: {title: 'Setups'} },
   { path: 'setup', component: SetupComponent, data: {title: 'Setup', mainMenu: true, icon: 'settings'} }
 ];
 

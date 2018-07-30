@@ -9,13 +9,15 @@ import { SetupComponent } from './setup/setup.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { LookupComponent } from './setup/lookup/lookup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SetupComponent,
     AnalyticsComponent,
-    HomeComponent
+    HomeComponent,
+    LookupComponent
   ],
   imports: [
     BrowserModule,

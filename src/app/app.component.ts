@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { routeList, a } from './app-routing.module';
+import { routeList } from './app-routing.module';
 import { titleUpdateStream } from './app-routing.module';
 
 //var _titleUpdateStream = titleUpdateStream;
@@ -12,7 +12,7 @@ import { titleUpdateStream } from './app-routing.module';
 })
 export class AppComponent {
   [x: string]: any;
-  title = 'Welcome' + a;
+  title = 'Welcome';
 
   mainMenus = routeList.filter(route => route.data && route.data.mainMenu)
 
